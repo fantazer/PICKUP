@@ -1,0 +1,242 @@
+@import 'rupture'
+@import "variable/_function.styl"
+@import "variable/_fonts.styl"
+@import "variable/_ie.styl"
+@import "icon/sprite.css"
+@import "variable/_helper.styl"
+@import "variable/_default.styl"
+@import "variable/_elements.styl"
+@import "variable/_constant.styl"
+@import "../module/**/*"
+
+body
+	@extend .type--main
+	font-family $v-font
+	color $main-text-color
+	line-height 1.2
+	letter-spacing 0.01em
+
+.main-cont
+	center(1200px,10px)
+
+.head
+	background: black
+.header-top-wrap
+	border-bottom 1px solid #323131
+.header-top
+	f()
+	align-items: center
+	color white
+.header-top__location
+	f()
+	tr(all)
+	opacity:.5
+	align-items: center
+	margin-right: 50px
+	&:hover
+		opacity:1
+	.icon
+		size 20px
+		margin-right: 15px
+		fill white
+	span
+		color white
+.header-top__nav
+	f()
+	height: 100%
+.header-top__nav-el
+	color white
+	opacity .5
+	margin-right: 30px
+	display: inline-block
+	padding: 20px 0
+	tr(all)
+	&:hover
+		color white
+		opacity:1
+
+.header-top__auth
+	margin-left: auto
+.header-top__reg
+	color white
+	opacity:.5
+	tr(all)
+	display: block
+	margin-left: auto
+	&:hover
+		color white
+		opacity:1
+.header-top__enter
+	padding: 20px 0
+	display: inline-block
+	border-left 1px solid #323131
+	border-right 1px solid #323131
+	margin-left: 20px
+	width: 110px
+	flex(mid)
+	.icon
+		opacity .5
+		size 16px
+		fill white
+		margin-right: 15px
+	span
+		color white
+.header
+	f()
+.logo
+	flex(mid)
+	width: 270px
+	&:hover
+		.logo-title
+			opacity: 1
+		.logo-text
+			opacity: 1
+
+.logo-img
+	img
+		width: 70px
+	margin-right: 30px
+.logo-cont
+	width calc(100% - 104px)
+	color white
+.logo-title
+	tr(all)
+	font-size 22px
+	font-weight 700
+	letter-spacing 0.55px
+	text-transform uppercase
+	opacity: .7
+	margin-bottom: 5px
+
+.logo-text
+	tr(all)
+	line-height: 1.6
+	opacity: .5
+	font-size: 12px
+.header-phone
+	flex(mid)
+	fl()
+	padding: 0 40px
+.header-phone__el
+	tr(all)
+	color white
+	display: block
+	font-size: 20px
+	font-weight 700
+	letter-spacing 0.5px
+	&:hover
+		color $yellow
+	&:first-child
+		margin-bottom: 10px
+.header-search
+	flex-grow 1
+	position: relative
+	border-left 1px solid #323131
+	border-right 1px solid #323131
+	flex(mid)
+	form
+		width: 100%
+	.icon
+		size 18px
+		position: absolute
+		right: 10%
+		cp()
+	.input
+		border 0
+		background: none
+		width: 100%
+		color white
+		padding-right: 20%
+.header-conf
+	f()
+.header-conf__el
+	flex(mid)
+	fl()
+	border-right 1px solid #323131
+	border-left 1px solid #323131
+	margin-left: -1px
+	size 110px
+	&:hover
+		.header-conf__el-text
+			color $yellow
+.header-conf__el-icon
+	margin: 10px 0
+	position: relative
+	.icon
+		size 30px
+		fill $yellow
+.header-conf__el-text
+	tr(all)
+	color white
+	text-align: center
+.header-conf__el-val
+	size 24px
+	background: $yellow
+	round()
+	flex(mid)
+	font-size: 12  px
+	border 2px solid black
+	position: absolute
+	right: -12px
+	top -6px
+.nav-wrap
+	position: relative
+	&:before
+		content ''
+		position: absolute
+		height: 100%
+		width: 50%
+		left 0
+		top 0
+		background: #292929
+	&:after
+		content ''
+		position: absolute
+		height: 100%
+		width: 50%
+		right 0
+		top 0
+		background: $yellow
+.nav
+	f()
+
+.nav-drop
+	display: none
+	position: absolute
+.nav-el
+	background:$yellow
+	font-weight:700
+	text-align: center
+	position: relative
+	z-index 2
+	&:hover
+		a
+			opacity:.6
+	span
+		color white
+		up()
+	a
+		tr(all)
+		display: block
+		color white
+		padding: 18px 0
+		up()
+
+.nav-list
+	flex(between)
+	width calc(100% - 200px)
+	.nav-el
+		flex-grow 1
+.nav-el-menu
+	width: 200px
+	flex(mid)
+	cp()
+	background: #292929
+	justify-content: flex-start
+	.icon
+		size 16px
+		fill white
+		margin-right: 20px
+	.icon-close
+		display: none
+//.icon-open

@@ -1,0 +1,488 @@
+.icon {
+    font-size: 10px;
+}
+
+.icon:before {
+    content:' ';
+    vertical-align:middle;
+    display: inline-block;
+    background-image: url("../svg/sprite.svg");
+    background-repeat: no-repeat;
+    background-size: 51.2em 1174.5em;
+}
+
+.no-svg .icon:before {
+    background-image: url("../svg/sprite.png");
+}
+
+
+
+  .icon.arrow-down:before {
+      background-position: 0em 0em;
+      width: 1.2em;
+      height: 0.8em;
+  }
+
+
+
+
+  .icon.arrow-down-fat:before {
+      background-position: 0em -0.8em;
+      width: 45.1847em;
+      height: 45.1847em;
+  }
+
+
+
+
+  .icon.arrow-left:before {
+      background-position: 0em -46em;
+      width: 1.3em;
+      height: 2em;
+  }
+
+
+
+
+  .icon.arrow-left-fat:before {
+      background-position: 0em -48em;
+      width: 49.2em;
+      height: 49.2em;
+  }
+
+
+
+
+  .icon.arrow-right:before {
+      background-position: 0em -97.2em;
+      width: 0.8em;
+      height: 1.2em;
+  }
+
+
+
+
+  .icon.arrow-right-fat:before {
+      background-position: 0em -98.4em;
+      width: 49.2004em;
+      height: 49.2004em;
+  }
+
+
+
+
+  .icon.arrow-up:before {
+      background-position: 0em -147.7em;
+      width: 6.4em;
+      height: 6.4em;
+  }
+
+
+
+
+  .icon.arrow-up-fat:before {
+      background-position: 0em -154.1em;
+      width: 45.1847em;
+      height: 45.1846em;
+  }
+
+
+
+
+  .icon.box:before {
+      background-position: 0em -199.3em;
+      width: 5.3em;
+      height: 6em;
+  }
+
+
+
+
+  .icon.cancel:before {
+      background-position: 0em -205.3em;
+      width: 47.519999999999996em;
+      height: 47.519999999999996em;
+  }
+
+
+
+
+  .icon.card:before {
+      background-position: 0em -252.9em;
+      width: 3.3em;
+      height: 2.3em;
+  }
+
+
+
+
+  .icon.cart:before {
+      background-position: 0em -255.2em;
+      width: 2.6em;
+      height: 2.5em;
+  }
+
+
+
+
+  .icon.cert:before {
+      background-position: 0em -257.7em;
+      width: 6em;
+      height: 6em;
+  }
+
+
+
+
+  .icon.checked:before {
+      background-position: 0em -263.7em;
+      width: 2.6em;
+      height: 2.6em;
+  }
+
+
+
+
+  .icon.clock:before {
+      background-position: 0em -266.3em;
+      width: 37.296em;
+      height: 37.296em;
+  }
+
+
+
+
+  .icon.close:before {
+      background-position: 0em -303.6em;
+      width: 1.4em;
+      height: 1.4em;
+  }
+
+
+
+
+  .icon.close-fat:before {
+      background-position: 0em -305em;
+      width: 2.19em;
+      height: 2.19em;
+  }
+
+
+
+
+  .icon.compare:before {
+      background-position: 0em -307.2em;
+      width: 3.1em;
+      height: 2.5em;
+  }
+
+
+
+
+  .icon.deliver:before {
+      background-position: 0em -309.7em;
+      width: 8em;
+      height: 5.1em;
+  }
+
+
+
+
+  .icon.download:before {
+      background-position: 0em -314.8em;
+      width: 47.12em;
+      height: 47.12em;
+  }
+
+
+
+
+  .icon.garbage:before {
+      background-position: 0em -362em;
+      width: 5.9em;
+      height: 5.9em;
+  }
+
+
+
+
+  .icon.heart:before {
+      background-position: 0em -367.9em;
+      width: 2.3em;
+      height: 2em;
+  }
+
+
+
+
+  .icon.house:before {
+      background-position: 0em -369.9em;
+      width: 48.619600000000005em;
+      height: 48.619600000000005em;
+  }
+
+
+
+
+  .icon.info:before {
+      background-position: 0em -418.6em;
+      width: 33em;
+      height: 33em;
+  }
+
+
+
+
+  .icon.instagram:before {
+      background-position: 0em -451.6em;
+      width: 2.4em;
+      height: 2.4em;
+  }
+
+
+
+
+  .icon.interface:before {
+      background-position: 0em -454em;
+      width: 49.04em;
+      height: 49.04em;
+  }
+
+
+
+
+  .icon.like:before {
+      background-position: 0em -503.1em;
+      width: 49.019999999999996em;
+      height: 49.019999999999996em;
+  }
+
+
+
+
+  .icon.location:before {
+      background-position: 0em -552.2em;
+      width: 1.4em;
+      height: 2em;
+  }
+
+
+
+
+  .icon.login:before {
+      background-position: 0em -554.2em;
+      width: 1.9em;
+      height: 3.3em;
+  }
+
+
+
+
+  .icon.magnifying-glass:before {
+      background-position: 0em -557.5em;
+      width: 45.1em;
+      height: 45.1em;
+  }
+
+
+
+
+  .icon.mail:before {
+      background-position: 0em -602.6em;
+      width: 2em;
+      height: 1.6em;
+  }
+
+
+
+
+  .icon.menu:before {
+      background-position: 0em -604.2em;
+      width: 45.9em;
+      height: 45.9em;
+  }
+
+
+
+
+  .icon.phone:before {
+      background-position: 0em -650.1em;
+      width: 1.8em;
+      height: 1.8em;
+  }
+
+
+
+
+  .icon.phone-call:before {
+      background-position: 0em -651.9em;
+      width: 47.3806em;
+      height: 47.3806em;
+  }
+
+
+
+
+  .icon.placeholder:before {
+      background-position: 0em -699.3em;
+      width: 47.7em;
+      height: 47.7em;
+  }
+
+
+
+
+  .icon.plus:before {
+      background-position: 0em -747em;
+      width: 4.2em;
+      height: 4.2em;
+  }
+
+
+
+
+  .icon.search:before {
+      background-position: 0em -751.2em;
+      width: 1.8em;
+      height: 1.8em;
+  }
+
+
+
+
+  .icon.share:before {
+      background-position: 0em -753em;
+      width: 48.160000000000004em;
+      height: 48.160000000000004em;
+  }
+
+
+
+
+  .icon.smile-good:before {
+      background-position: 0em -801.2em;
+      width: 4.3em;
+      height: 4.3em;
+  }
+
+
+
+
+  .icon.soc-facebook:before {
+      background-position: 0em -805.5em;
+      width: 51.2em;
+      height: 51.2em;
+  }
+
+
+
+
+  .icon.soc-facebook-box:before {
+      background-position: 0em -856.7em;
+      width: 9em;
+      height: 9em;
+  }
+
+
+
+
+  .icon.soc-google:before {
+      background-position: 0em -865.7em;
+      width: 9.6669em;
+      height: 9.6669em;
+  }
+
+
+
+
+  .icon.soc-in:before {
+      background-position: 0em -875.4em;
+      width: 43.011700000000005em;
+      height: 43.011700000000005em;
+  }
+
+
+
+
+  .icon.soc-instagram:before {
+      background-position: 0em -918.5em;
+      width: 43.8536em;
+      height: 43.8536em;
+  }
+
+
+
+
+  .icon.soc-ok:before {
+      background-position: 0em -962.4em;
+      width: 9.5481em;
+      height: 9.5481em;
+  }
+
+
+
+
+  .icon.soc-twitter:before {
+      background-position: 0em -972em;
+      width: 41.015499999999996em;
+      height: 41.015499999999996em;
+  }
+
+
+
+
+  .icon.soc-vk:before {
+      background-position: 0em -1013.1em;
+      width: 51.2em;
+      height: 51.2em;
+  }
+
+
+
+
+  .icon.soc-whatsapp:before {
+      background-position: 0em -1064.3em;
+      width: 51.2em;
+      height: 51.2em;
+  }
+
+
+
+
+  .icon.soc-youtube:before {
+      background-position: 0em -1115.5em;
+      width: 6.4em;
+      height: 6.4em;
+  }
+
+
+
+
+  .icon.star:before {
+      background-position: 0em -1121.9em;
+      width: 49.0727em;
+      height: 49.0727em;
+  }
+
+
+
+
+  .icon.user:before {
+      background-position: 0em -1171em;
+      width: 1.6em;
+      height: 1.6em;
+  }
+
+
+
+
+  .icon.vk:before {
+      background-position: 0em -1172.6em;
+      width: 3.2em;
+      height: 1.9em;
+  }
+
+
+
+
+

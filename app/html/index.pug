@@ -1,0 +1,80 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.head
+	//header-top
+	.header-top-wrap
+		.main-cont
+			.header-top
+				a(href="#").header-top__location
+					.header-top__location-icon
+						+icon("location","icon")
+					span Санкт-Петербург
+				.header-top__nav
+					a(href="#").header-top__nav-el Акции
+					a(href="#").header-top__nav-el О компании
+					a(href="#").header-top__nav-el Контакты
+				a(href="#").header-top__reg Регистрация
+				a(href="#").header-top__enter
+					+icon("user","icon")
+					span Войти
+	//header-top===end
+	//header-middle
+	.main-cont
+		.header
+			a(href="#").logo
+				.logo-img
+					img(src="img/logo.png", alt="")
+				.logo-cont
+					.logo-title PKSTYLE.RU
+					.logo-text Интернет магазин оборудования для пикапов
+			.header-phone
+				a(href="tel:+7 (983) 510-85-31").header-phone__el +7 (983) 510-85-31
+				a(href="tel:+7 (913) 937-44-35").header-phone__el +7 (913) 937-44-35
+			.header-search
+				form(action="#")
+					input(type="text" placeholder="Поиск оборудования").input
+				+icon("search","icon")
+			.header-conf
+				a(href="#").header-conf__el
+					.header-conf__el-icon
+						+icon("heart","icon")
+						.header-conf__el-val 2
+					.header-conf__el-text Избранное
+				a(href="#").header-conf__el
+					.header-conf__el-icon
+						+icon("compare","icon")
+					.header-conf__el-text Сравнение
+				a(href="#").header-conf__el
+					.header-conf__el-icon
+						+icon("cart","icon")
+						.header-conf__el-val 2
+					.header-conf__el-text Корзина
+	//header-middle
+
+	//main-nav
+	.nav-wrap
+		.main-cont
+			.nav
+				.nav-drop
+					.main-cont
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur consequatur dolores earum error fugit magnam nam nobis rem voluptatem!
+				.nav-el.nav-el-menu
+					+icon("menu","icon icon-open")
+					+icon("close","icon icon-close")
+					span марки авто
+				.nav-list
+					.nav-el
+						a(href="#") кунги
+					.nav-el
+						a(href="#") крышки кузова
+					.nav-el
+						a(href="#") вкладиши в кузов
+					.nav-el
+						a(href="#") тенты
+					.nav-el
+						a(href="#") аксессуары
+					.nav-el
+						a(href="#") запчасти
+	//main-nav===end
+include ./block_html/_script.pug
