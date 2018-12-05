@@ -240,3 +240,238 @@ body
 	.icon-close
 		display: none
 //.icon-open
+
+
+
+.section-slider
+	background: #f1f1f1
+	padding: 55px 0 35px 0
+	.slick-slide
+		margin: 0 15px
+	.slick-list
+		margin: 0 -15px
+	.slider-control
+		tr(all)
+		position: absolute
+		top 50%
+		margin-top: -18px
+		z-index 10
+		cp()
+		&:hover
+			.icon
+				opacity:1
+		.icon
+			size 18px
+			opacity:.8
+	.slider-control--left
+		left -40px
+	.slider-control--right
+		right -40px
+.type-slider__el
+	flex(mid)
+	fl()
+	bsh()
+	br(3px)
+	tr(all)
+	size 170px
+	display: flex !important
+	padding: 25px 10px 30px 10px
+	background: white
+	margin-bottom: 20px
+	&:hover
+		box-shadow 0 8px 24px rgba(0, 0, 0, 0.16)
+		.type-slider__el-title
+			color $yellow
+			opacity: 1
+.type-slider__el-img
+	margin-bottom: 20px
+	margin-top: auto
+	margin-left: auto
+	margin-right: auto
+.type-slider__el-title
+	up()
+	tr(all)
+	text-align: center
+	opacity: .3
+	font-weight: 700
+	margin-top: auto
+.info-wrap
+	padding: 80px 0 100px 0
+//.info
+.info-title
+	@extend .type--lg
+	up()
+	font-weight: 700
+	text-align: center
+	margin-bottom: 25px
+.info-text
+	center(770px,0)
+	text-align: center
+	line-height: 1.6
+	margin-bottom: 40px
+.info-type
+	f()
+	justify-content: space-between
+.info-type__el
+	padding: 50px 10px 35px 10px
+	flex(mid)
+	fl()
+	width: 32%
+	border-radius 3px
+	border 1px solid #e9e9e9
+	&:nth-child(2)
+		.icon
+			size 55px
+	&:nth-child(3)
+		.icon
+			size 55px
+.info-type__el-icon
+	margin-bottom: 25px
+	margin-top: auto
+	.icon
+		size 80px
+		fill $yellow
+.info-type__el-title
+	@extend .type--lg
+	margin-top: auto
+	font-weight: 700
+	margin-bottom: 15px
+	text-align: center
+	up()
+	letter-spacing 0.2px
+.info-type__el-text
+	text-align: center
+.footer-top-wrap
+	background: #292929
+	color white
+.footer-top
+	f()
+	align-items: stretch
+.footer-top__copy
+	color white
+	margin-right: 50px
+	f()
+	align-items: center
+.footer-top__lk
+	flex(mid)
+	color white
+	border-left 1px solid #323131
+	border-right 1px solid #323131
+	padding: 35px 20px
+	.icon
+		size 16px
+		margin-right: 10px
+		fill $yellow
+.footer-top__politick
+	color white
+	f()
+	align-items: center
+	margin-left: auto
+	margin-right: 50px
+.footer-top__soc
+	border-left 1px solid #323131
+	border-right 1px solid #323131
+	flex(mid)
+	padding: 10px 30px
+	margin-left: -1px
+	&:hover
+		.icon
+			opacity: 1
+	.icon
+		tr(all)
+		size 24px
+		fill white
+		opacity: .5
+.footer-wrap
+	background:black
+	color white
+.footer
+	f()
+.footer__menu
+	padding-top: 45px
+	width: 20%
+	&:first-child
+		width: 15%
+.footer__menu-title
+	@extend .type--md
+	font-weight 700
+	opacity:.5
+	up()
+	margin-bottom: 20px
+.footer__menu__el
+	color white
+	display: block
+	margin-bottom: 20px
+.footer-location
+	border-left 1px solid #323131
+	border-right 1px solid #323131
+	padding: 45px 30px
+	width: 35%
+	margin-left: 20px
+	position: relative
+	.slider-control
+		tr(all)
+		z-index 10
+		cp()
+		&:hover
+			.icon
+				opacity:1
+		.icon
+			size 18px
+			opacity:.8
+			fill white
+	.slider-control-wrap
+		flex(mid)
+	.slider-control--right
+		margin-left: 30px
+.footer-location__title
+	@extend .type--md
+	font-weight 700
+	opacity:.5
+	up()
+	margin-bottom: 25px
+	flex(between)
+//.footer-slider
+//.footer-slider__el
+.footer-location__item
+	f()
+	margin-bottom: 30px
+.footer-location__icon
+	margin-right: 20px
+	.icon
+		size 20px
+		fill $yellow
+//.footer-location__info
+.footer-location__town
+	margin-bottom:10px
+.footer-location__street
+	opacity: .5
+	margin-bottom: 10px
+.footer-location__phone
+	opacity: .5
+	color white
+	margin-bottom: 3px
+.footer-contact
+	width: 25%
+	padding: 45px 0 0 30px
+.footer-contact__title
+	@extend .type--md
+	font-weight 700
+	opacity:.5
+	up()
+	margin-bottom: 25px
+.footer-contact__el
+	f()
+	margin-bottom: 25px
+	a
+		color white
+		display: block
+.footer-contact__icon
+	margin-right: 20px
+	.icon
+		size 18px
+		fill $yellow
+		margin-top: 3px
+//.footer-contact__info
+.footer-contact__info-el
+	line-height: 1.6

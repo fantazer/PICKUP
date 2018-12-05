@@ -77,4 +77,128 @@ include block_html/_include.pug
 					.nav-el
 						a(href="#") запчасти
 	//main-nav===end
+.section-slider
+	.main-cont
+		.type-slider-wrap.slider-wrap
+			.slider-control.slider-control--left
+				+icon("arrow-left","icon")
+			.slider-control.slider-control--right
+				+icon("arrow-right","icon")
+			.type-slider.slider-item
+				- for (var i=0;i<2;i++)
+					a(href="#").type-slider__el
+						img(src="img/car-logo-1.png", alt="").type-slider__el-img
+						.type-slider__el-title mercedes-benz
+					a(href="#").type-slider__el
+						img(src="img/car-logo-2.png", alt="").type-slider__el-img
+						.type-slider__el-title toyota
+					a(href="#").type-slider__el
+						img(src="img/car-logo-3.png", alt="").type-slider__el-img
+						.type-slider__el-title volkswagen
+					a(href="#").type-slider__el
+						img(src="img/car-logo-4.png", alt="").type-slider__el-img
+						.type-slider__el-title land ROVER
+					a(href="#").type-slider__el
+						img(src="img/car-logo-5.png", alt="").type-slider__el-img
+						.type-slider__el-title mazda
+					a(href="#").type-slider__el
+						img(src="img/car-logo-6.png", alt="").type-slider__el-img
+						.type-slider__el-title mitsubishi
+
+.info-wrap
+	.main-cont
+		.info
+			.info-title мы специализируемся на пикапах
+			.info-text Многолетний опыт продажи, установки и эксплуатации аксессуаров от многих российских и зарубежных производителей позволяет нам помогать своим клиентам в выборе оптимального решения
+		.info-type
+			.info-type__el
+				.info-type__el-icon
+					+icon("deliver","icon")
+				.info-type__el-title доставка
+				.info-type__el-text Отправка в любую точку России
+			.info-type__el
+				.info-type__el-icon
+					+icon("box","icon")
+				.info-type__el-title прямые поставки
+				.info-type__el-text Прямые поставки от производителей
+			.info-type__el
+				.info-type__el-icon
+					+icon("cart","icon")
+				.info-type__el-title сертификация
+				.info-type__el-text Все товары сертифицированы
+
+.footer-top-wrap
+	.main-cont
+		.footer-top
+			.footer-top__copy © PickupStyle 2018
+			a(href="#").footer-top__lk
+				+icon("user","icon")
+				span Личный кабинет
+			a(href="#").footer-top__politick Политика конфиденциальности
+			a(href="#").footer-top__soc
+				+icon("instagram","icon")
+			a(href="#").footer-top__soc
+				+icon("vk","icon")
+.footer-wrap
+	.main-cont
+		.footer
+			.footer__menu
+				.footer__menu-title компания
+				a(href="#").footer__menu__el О компании
+				a(href="#").footer__menu__el Производители
+				a(href="#").footer__menu__el Карта сайта
+				a(href="#").footer__menu__el Контакты
+			.footer__menu
+				.footer__menu-title сервис и поддержка
+				a(href="#").footer__menu__el Оплата и доставка
+				a(href="#").footer__menu__el Как сделать заказ
+				a(href="#").footer__menu__el Вопросы и ответы
+				a(href="#").footer__menu__el Возврат товара
+				a(href="#").footer__menu__el Возврат денежных средства
+			.footer-location.slider-wrap
+				.footer-location__title
+					span наши филиалы
+					.slider-control-wrap
+						.slider-control.slider-control--left
+							+icon("arrow-left","icon")
+						.slider-control.slider-control--right
+							+icon("arrow-right","icon")
+				.footer-slider.slider-item
+					- for (var i=0;i<3;i++)
+						.footer-slider__el
+							.footer-location__item
+								.footer-location__icon
+									+icon("location","icon")
+								.footer-location__info
+									.footer-location__town Новосибирск
+									.footer-location__street ул. Немирович-Данченко д.120/2
+									a(href="tel:8 800 555 35 35").footer-location__phone 8 800 555 35 35
+							.footer-location__item
+								.footer-location__icon
+									+icon("location","icon")
+								.footer-location__info
+									.footer-location__town Новосибирск
+									.footer-location__street ул. Немирович-Данченко д.120/2
+									a(href="tel:8 800 555 35 35").footer-location__phone 8 800 555 35 35
+			.footer-contact
+				.footer-contact__title контакты
+				.footer-contact__el
+					.footer-contact__icon
+						+icon("phone","icon")
+					.footer-contact__info
+						a(href="tel:+7 (983) 510-85-31").footer-contact__info-el +7 (983) 510-85-31
+						a(href="tel:+7 (913) 937-44-35").footer-contact__info-el +7 (913) 937-44-35
+				.footer-contact__el
+					.footer-contact__icon
+						+icon("mail","icon")
+					.footer-contact__info
+						a(href="mailto:Sales@pkstyle.ru").footer-contact__info-el Sales@pkstyle.ru
+				.footer-contact__el
+					.footer-contact__icon
+						+icon("location","icon")
+					.footer-contact__info
+						.footer-contact__info-el Новосибирск ул. Немирович-Данченко д.120/2
+
+
+
 include ./block_html/_script.pug
