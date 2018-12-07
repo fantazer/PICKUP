@@ -79,7 +79,7 @@ include block_html/_include.pug
 					.nav-drop__wrap
 						.nav-drop__list.scroll-container
 							- for (var i=0;i<14;i++)
-								.nav-drop__list-el
+								.nav-drop__list-el(class=i===0?'nav-drop__list-el--active':'')
 									.nav-drop__list-name Nissan
 									.nav-drop__list-val 100
 									.nav-drop__list-icon
@@ -99,6 +99,165 @@ include block_html/_include.pug
 
 
 	//main-nav===end
+
+//filter
+.filter-wrap
+	.main-cont
+		.filter
+			.filter__el
+				.filter__el-name Марка авто
+				.filter__el-list
+					select.select-beauty
+						option ToyotaToyotaToyotaToyotaToyota
+						option Nissan
+						option Mazda
+			.filter__el
+				.filter__el-name Год выпуска
+				.filter__el-list
+					select.select-beauty
+						option 2018
+						option 2017
+						option 2016
+			.filter__el.filter__el--type
+				.filter__el-name Тип товара
+				.filter__el-list
+					select.select-beauty
+						option Прицепное оборудование Прицепное оборудование Прицепное оборудование
+						option Аморитзатор
+						option Фары
+
+//content
+
+.page-wrap
+	.main-cont
+		.page
+			.category-wrap
+				.category-title категории
+				.category
+					- for (var i=0;i<15;i++)
+						.category__el-cont
+							.category__el-item
+								a(href="#").category__el
+									.category__el-name Toyota
+									.category__el-val 100
+								+icon("arrow-right","icon category__el-toggle")
+								.category__el-sub-wrapper
+									- for (var j=0;j<5;j++)
+										a(href="#").category__el-sub
+											.category__el-sub-name Nissan
+											.category__el-sub-val 12
+			.content
+				.bread
+					a(href="#").bread__el Главная
+					a(href="#").bread__el Марки автомобилей
+					a(href="#").bread__el Toyota
+					.bread__el Toyota Hilux
+				h1.content-title toyota hilux
+				.label
+					a(href="#").label__el hilux 2016
+					a(href="#").label__el land cruiser 100
+					a(href="#").label__el land cruiser 70
+				.description
+					p Toyota Hilux- автомобиль с почти полувековой историей, на родном рынке внедорожник дебютировал аж в 1967 году, тогда автомобиль представлял из себя простенький пикап с маленьким двигателем на 1500 кубических сантиметра и 75 лошадиными силами, разгоняющих автомобиль до максимальных 130 километров в час и очень парадоксальным названием- Hilux, что означает highly luxurious (очень роскошный)
+				.sort
+					.sort__el
+						.sort__el-name Показать
+						.sort__el-icon
+							+icon("arrow-down","icon")
+						.sort__el-sub
+							.sort__el-sub-row
+								.sort__el-sub-check
+									- for (var i=1;i<5;i++)
+										.check-el
+												label.style-label.style-label--radio
+													input(type="radio" name="group-show").sytle-input
+													.sytle-input-element
+														+icon("checked","icon-check")
+													.sytle-input-text #{i}
+					.sort__el
+						.sort__el-name Сортировка
+						.sort__el-icon
+							+icon("arrow-down","icon")
+						.sort__el-sub
+							.sort__el-sub-row
+								.sort__el-sub-check
+									- for (var i=1;i<5;i++)
+										.check-el
+											label.style-label.style-label--radio
+												input(type="radio" name="group-sort").sytle-input
+												.sytle-input-element
+													+icon("checked","icon-check")
+												.sytle-input-text #{i}
+
+
+
+				.cards
+					- for (var i=0;i<6;i++)
+						.card
+							.card-sort
+								.card-sort__el
+									+icon("compare","icon")
+								.card-sort__el
+									+icon("heart","icon")
+							.card-container
+								.card-img(style="background-image:url('img/item.png')")
+								.card-content
+									.card-title автомобильный бокс на крышу lux viking 460l черный, 2-х стороннее открытие
+									.card-descr Багажные боксы LUX произведены в России, из высококачественного российского пластика ABS ...
+									.card-info
+										.card-info-row
+											.card-info-name Марка:
+											.card-info-val Toyota
+										.card-info-row
+											.card-info-name Страна:
+											.card-info-val Россия
+										.card-info-row
+											.card-info-name Тип:
+											.card-info-val Крышка кузова
+										.card-info-row
+											.card-info-name Подходит для:
+											.card-info-val 2007 2008 2009
+									.card-option-wrap
+										.card-option
+											.card-option-toggle
+												.card-option__title
+													span.open Выбрать опции
+													span.close Закрыть опции
+												+icon("arrow-right","icon")
+											.options.scroll-container
+												- for (var j=0;j<9;j++)
+													.option__el
+														.check-el
+															label.style-label.style-label--checkbox
+																input(type="checkbox").sytle-input
+																.sytle-input-element
+																	+icon("checked","icon-check")
+																.sytle-input-text Кольца для крепления на кольцо 2 т.  4шт
+																	span.option-price +4000 ₽
+							.card-footer.incr__get-wrap
+								.card-price 115 900 ₽
+								.card-get.icr-btn в корзину
+								.elements-icr-block.hidden
+									.incr
+										.incr__minus.incr--one.incr__nav -
+										.incr__val
+											span 1
+											.incr__val-coner
+										.incr__plus.incr__nav +
+				.pagination-wrap
+					.pagination__text Показано с 1 по 10 из 225 (всего 23 страниц)
+					.pagination
+						- for (var i=1;i<8;i++)
+							a(href="#" class=i===1?'pagination__el--active':'').pagination__el #{i}
+
+				.about-wrap
+					.about
+						h2.about-title Nissan Nevara
+						p Toyota Hilux- автомобиль с почти полувековой историей, на родном рынке внедорожник дебютировал аж в 1967 году, тогда автомобиль представлял из себя простенький пикап с маленьким двигателем на 1500 кубических сантиметра и 75 лошадиными силами, разгоняющих автомобиль до максимальных 130 километров в час и очень парадоксальным названием- Hilux, что означает highly luxurious (очень роскошный)
+					.about
+						h2.about-title Кунг для Nissan Nevara
+						p Toyota Hilux- автомобиль с почти полувековой историей, на родном рынке внедорожник дебютировал аж в 1967 году, тогда автомобиль представлял из себя простенький пикап с маленьким двигателем на 1500 кубических сантиметра и 75 лошадиными силами, разгоняющих автомобиль до максимальных 130 километров в час и очень парадоксальным названием- Hilux, что означает highly luxurious (очень роскошный)
+
 .section-slider
 	.main-cont
 		.type-slider-wrap.slider-wrap

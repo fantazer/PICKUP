@@ -167,6 +167,73 @@ $(document).ready(function () {
 		heightHeader=$('.nav-wrap').height();
 	});
 	//animate header === end
+
+	//toggle category
+	$('.category__el-toggle').click(function(){
+		var parent = $(this).closest('.category__el-item');
+		parent.toggleClass('category__el-item--active');
+		parent.find('.category__el-sub-wrapper').slideToggle();
+	});
+	//toggle category===end
+
+	//beauty select
+	$('.select-beauty').niceSelect();
+	//beauty select===end
+
+
+	//dropdown sort
+	$('.sort__el').click(function(e){
+		$(this).find('.sort__el-sub').slideToggle();
+		e.stopPropagation();
+	});
+	$('.sort__el-sub').click(function(e){
+		e.stopPropagation();
+	});
+	$(document).on("click", function () {
+		$('.sort__el-sub').slideUp();
+	});
+	//dropdown sort === end
+
+
+	//dpor options
+	$('.card-option-toggle').click(function(){
+		var maxHeight = $(this).closest('.card').find('.card-container').height();
+		var container = $(this).closest('.card-option');
+		container.toggleClass('card-option--active');
+		if(container.hasClass("card-option--active")){
+			$(this).closest('.card').find('.scroll-container').css('maxHeight',maxHeight - 100);
+		}
+		//parrent.find('.options').slideToggle(function(){});
+	});
+	//dpor options===end
+
+	//increment field
+
+	$('.icr-btn').click(function(){
+		$(this).addClass('hidden');
+		$(this).next('.elements-icr-block').removeClass('hidden');
+	});
+	$('.incr__minus.incr--one').click(function () {
+				var $input = $(this).parent().find('.incr__val span');
+				var count = parseInt($input.html()) - 1;
+				count = count < 1 ? 0 : count;
+				$input.html(count);
+				if(count < 1 ){
+					$(this).closest('.elements-icr-block').addClass('hidden');
+					$(this).closest('.incr__get-wrap').find('.icr-btn').removeClass('hidden');
+					count = 1;
+					$input.html(count);
+				}
+		});
+
+	$('.incr__plus').click(function () {
+			var $input = $(this).parent().find('.incr__val span');
+			var count = parseInt($input.html()) + 1;
+			count = count > 100 ? 100 : count;
+			$input.html(count);
+	});
+	//increment field end
+
 	function detectIE() {
 		var ua = window.navigator.userAgent;
 
@@ -210,22 +277,6 @@ $(document).ready(function () {
 		localStorage.clear();
 	});
 	// ==== clear storage end =====
-
-
-	/* ###### For SlideToggle Elements  ######*/
-	/*var hideToggle = function(targetClick,toggleEl) {
-		$(targetClick).click(function(event){
-				event.stopPropagation();
-				$(toggleEl).slideToggle("fast");
-		});
-		$(toggleEl).on("click", function (event) {
-			event.stopPropagation();
-		});
-		$(document).on("click", function () {
-				$(toggleEl).hide();
-		});
-	}
-	hideToggle('.icon-bars','.top-menu_link');*/
 
 })
 
