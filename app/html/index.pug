@@ -1,6 +1,57 @@
 include block_html/_style.pug
 include block_html/_include.pug
 
+
+
+
+.slide-menu
+	.slide-menu__block
+		.slide-menu__title каталог
+		a(href="#").slide-menu__cat
+			.slide-menu__cat-name по деталям
+			+icon("arrow-right","icon")
+		a(href="#").slide-menu__cat
+			.slide-menu__cat-name по маркам
+			+icon("arrow-right","icon")
+	.slide-menu__block
+		a(href="#").slide-menu__el
+			.slide-menu__el-icon
+				+icon("heart","icon")
+			.slide-menu__el-name избранное
+		a(href="#").slide-menu__el
+			.slide-menu__el-icon
+				+icon("compare","icon")
+			.slide-menu__el-name сравнение
+		a(href="#").slide-menu__el
+			.slide-menu__el-icon
+				+icon("user","icon")
+			.slide-menu__el-name войти
+		a(href="#").slide-menu__el
+			.slide-menu__el-icon
+			.slide-menu__el-name регистрация
+	.slide-menu__block
+		.slide-menu__list
+			-
+				var items = [
+					'О компании ',
+					'Акции',
+					'Производители',
+					'Контакты',
+					'Оплата и доставка',
+					'Как сделать заказ',
+					'Вопросы и ответы',
+					'Возврат товара',
+					'Возврат денежных средства'
+					];
+			each item in items
+				a(href="#").slide-menu__list-el #{item}
+	.slide-menu__location
+		.slide-menu__location-icon
+			+icon("location","icon")
+		.slide-menu__location-name Санкт-Петербург
+	.slide-menu__block
+		a(href="tel:+7 (983) 510-85-31").slide-menu__phone +7 (983) 510-85-31
+		a(href="tel:+7 (913) 937-44-35").slide-menu__phone +7 (913) 937-44-35
 .head
 	//header-top
 	.header-top-wrap
@@ -56,6 +107,18 @@ include block_html/_include.pug
 	.nav-wrap
 		.nav-wrap-container
 			.main-cont
+				.nav-mobile
+					.nav-mobile__toggle.head-toggle
+						+icon("menu","icon icon-open")
+						+icon("close","icon icon-close")
+					a(href="#").nav-mobile__logo pkstyle.ru
+					.nav-mobile__search
+						+icon("search","icon")
+					.nav-mobile__basket
+						+icon("cart","icon")
+						.nav-mobile__basket-val 3
+
+
 				.nav
 					.nav-el.nav-el-menu
 						+icon("menu","icon icon-open")
@@ -101,6 +164,11 @@ include block_html/_include.pug
 	//main-nav===end
 
 //filter
+
+.mobile-toggle.mobile-toggle--filter
+	.mobile-toggle__name Фильтр
+	.mobile-toggle__icon
+		+icon("arrow-down","icon")
 .filter-wrap
 	.main-cont
 		.filter
@@ -131,6 +199,10 @@ include block_html/_include.pug
 .page-wrap
 	.main-cont
 		.page
+			.mobile-toggle.mobile-toggle--cat
+				.mobile-toggle__name Категории
+				.mobile-toggle__icon
+					+icon("arrow-down","icon")
 			.category-wrap
 				.category-title категории
 				.category
