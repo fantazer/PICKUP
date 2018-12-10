@@ -2447,6 +2447,8 @@ select.select-beauty {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: all 0.4s;
+          transition: all 0.4s;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -2457,11 +2459,28 @@ select.select-beauty {
 .sort__el:hover {
   cursor: pointer;
 }
+.sort__el:hover {
+  color: #e1a31d;
+}
+.sort__el:hover .icon {
+  fill: #e1a31d;
+}
+.sort__el--active {
+  color: #e1a31d;
+}
+.sort__el--active .icon {
+  fill: #e1a31d;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
 .sort__el-name {
   font-weight: 700;
   margin-right: 10px;
 }
 .sort__el-icon .icon {
+  -webkit-transition: all 0.4s;
+          transition: all 0.4s;
   width: 8px;
   height: 8px;
 }
@@ -2620,8 +2639,6 @@ select.select-beauty {
   background: #fff;
   height: 58px;
   overflow: hidden;
-  -webkit-transition: top 0.5s;
-          transition: top 0.5s;
   z-index: 10;
 }
 @media only screen and (max-width: 768px) {
@@ -2923,7 +2940,13 @@ select.select-beauty {
           align-items: center;
   -webkit-border-radius: 3px;
           border-radius: 3px;
+  -webkit-transition: all 0.4s;
+          transition: all 0.4s;
   font-weight: 700;
+}
+.pagination__el:hover {
+  background: #111;
+  color: #fff;
 }
 .pagination__el--active {
   background: #111;
@@ -3313,6 +3336,28 @@ select.select-beauty {
 }
 .slide-menu__phone:last-child {
   margin-bottom: 0;
+}
+.nav-mobile__search-form {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  border: 2px solid #111;
+  width: 300px;
+  -webkit-border-radius: 0 0 5px 5px;
+          border-radius: 0 0 5px 5px;
+  display: none;
+}
+@media only screen and (max-width: 640px) {
+  .nav-mobile__search-form {
+    width: 100%;
+  }
+}
+.nav-mobile__search-form .input {
+  width: 100%;
+}
+* {
+  -webkit-tap-highlight-color: transparent !important;
+  tap-highlight-color: transparent !important;
 }
 @-webkit-keyframes slideInDown {
   from {

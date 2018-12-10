@@ -1,9 +1,6 @@
 include block_html/_style.pug
 include block_html/_include.pug
 
-
-
-
 .slide-menu
 	.slide-menu__block
 		.slide-menu__title каталог
@@ -117,7 +114,9 @@ include block_html/_include.pug
 					.nav-mobile__basket
 						+icon("cart","icon")
 						.nav-mobile__basket-val 3
-
+					.nav-mobile__search-form
+						form(action)
+							input(type="text" placeholder="Поиск").input
 
 				.nav
 					.nav-el.nav-el-menu

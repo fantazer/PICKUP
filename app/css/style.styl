@@ -963,15 +963,26 @@ select.select-beauty
 	margin-bottom: 30px
 .sort__el
 	f()
+	cp()
+	tr(all)
 	align-items: center
 	position: relative
 	margin-right: 30px
-	cp()
+	&:hover
+		color $yellow
+		.icon
+			fill $yellow
+.sort__el--active
+	color $yellow
+	.icon
+		fill $yellow
+		transform rotate(180deg)
 .sort__el-name
 	font-weight: 700
 	margin-right: 10px
 .sort__el-icon
 	.icon
+		tr(all)
 		size 8px
 .sort__el-sub
 	position: absolute
@@ -1071,7 +1082,6 @@ select.select-beauty
 	background: white
 	height: 58px
 	overflow: hidden
-	transition top .5s
 	z-index 10
 .card-option--active
 	+below(640px)
@@ -1214,7 +1224,11 @@ select.select-beauty
 	size 32px
 	flex(mid)
 	br(3px)
+	tr(all)
 	font-weight:700
+	&:hover
+		background: black
+		color white
 
 .pagination__el--active
 	background: black
@@ -1426,3 +1440,20 @@ select.select-beauty
 	margin-bottom: 20px
 	&:last-child
 		margin-bottom: 0
+
+.nav-mobile__search-form
+	+below(640px)
+		width: 100%
+	position: absolute
+	top 100%
+	right: 0
+	border 2px solid black
+	width: 300px
+	border-radius 0 0 5px 5px
+	display: none
+	.input
+		width: 100%
+
+*
+	-webkit-tap-highlight-color: transparent!important;
+	tap-highlight-color: transparent!important;
